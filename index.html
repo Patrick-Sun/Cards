@@ -7,131 +7,136 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body onload="onload()">
+	<div id="header">
+		<h1 id="title">CANADA</h1>
+		<div id="controls">
+			<button id="button_date" class="button button_active" onclick="order_date(this)"><span class="button_icon" id="sort_date"></span>Sort by Date</button>
+			<button id="button_name"  class="button button_inactive" onclick="order_name(this)"><span class="button_icon" id="sort_name"></span>Sort by Card</button>
+		</div>
+	</div>
 	<ul id="deck">
-		<li class="card_frame">
+		<li class="card_frame" id="c_03" data-order="01">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="c_03"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Patrick S.</span>
-			<div class="download"></div>
+			<a class="download" href="assets/c_03.png" target="_blank"></a>
 		</li>
-		<li class="card_frame">
+		<li class="card_frame" id="s_12" data-order="02">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="s_12"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Rachel R.</span>
-			<div class="download"></div>
+			<a class="download" href="assets/s_12.png" target="_blank"></a>
 		</li>
-		<li class="card_frame">
+		<li class="card_frame" id="s_11" data-order="03">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="s_11"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Tony D.</span>
-			<div class="download"></div>
+			<a class="download" href="assets/s_11.png" target="_blank"></a>
 		</li>
-		<li class="card_frame">
+		<li class="card_frame" id="h_11" data-order="04">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="h_11"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Jalal J.</span>
-			<div class="download"></div>
+			<a class="download" href="assets/h_11.png" target="_blank"></a>
 		</li>
-		<li class="card_frame">
+		<li class="card_frame" id="c_08" data-order="05">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="c_08"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Mikayla B.</span>
-			<div class="download"></div>
+			<a class="download" href="assets/c_08.png" target="_blank"></a>
 		</li>
-		<li class="card_frame">
+		<li class="card_frame" id="d_07" data-order="06">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="d_07"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Mochi</span>
-			<div class="download"></div>
+			<a class="download" href="assets/d_07.png" target="_blank"></a>
 		</li>
-		<li class="card_frame">
+		<li class="card_frame" id="c_04" data-order="07">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="c_04"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Mako</span>
-			<div class="download"></div>
+			<a class="download" href="assets/c_04.png" target="_blank"></a>
 		</li>
-		<li class="card_frame">
+		<li class="card_frame" id="h_01" data-order="08">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="h_01"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Roze Z.</span>
-			<div class="download"></div>
+			<a class="download" href="assets/h_01.png" target="_blank"></a>
 		</li>
-		<li class="card_frame">
+		<li class="card_frame" id="s_02" data-order="09">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="s_02"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Johnny W.</span>
-			<div class="download"></div>
+			<a class="download" href="assets/s_02.png" target="_blank"></a>
 		</li>
-		<li class="card_frame">
+		<li class="card_frame" id="h_13" data-order="10">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="h_13"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Rachel Z.</span>
-			<div class="download"></div>
+			<a class="download" href="assets/h_13.png" target="_blank"></a>
 		</li>
-		<li class="card_frame">
+		<li class="card_frame" id="s_13" data-order="11">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="s_13"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Steph K.</span>
-			<div class="download"></div>
+			<a class="download" href="assets/s_13.png" target="_blank"></a>
 		</li>
-		<li class="card_frame">
+		<li class="card_frame" id="d_11" data-order="12 ">
 			<div class="card">
 				<div class="card_inner" onclick="flip(this)">
-					<div class="card_face card_face_front" id="d_11"></div>
+					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
 			<span class="name">Paz H.</span>
-			<div class="download"></div>
+			<a class="download" href="assets/d_11.png" target="_blank"></a>
 		</li>
-		<div id="footer"></div>
 	</ul>
-
-
+	<div id="footer"></div>
 	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
