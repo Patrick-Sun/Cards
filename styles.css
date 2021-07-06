@@ -24,6 +24,7 @@ body {
 	transform-style: preserve-3d;
 	cursor: pointer;
 	position: relative;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .card_inner.is_flipped {
