@@ -136,8 +136,14 @@ body {
 	perspective: 1000px;
 }
 
-.card_inner {
+.card_bg{
+	width: 100%;
+	height: 100%;
 	background: white;
+	border-radius: 16px;
+}
+
+.card_inner {
 	width: 100%;
 	height: 100%;
 	transition: transform 0.5s;
