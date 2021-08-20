@@ -2,6 +2,13 @@ function flip(ele) {
 	ele.classList.toggle('is_flipped')
 };
 
+function flip_all() {
+  var cards = document.getElementsByClassName("card_inner");
+  for (var i = 0; i < cards.length; i++) {
+     cards.item(i).classList.toggle('is_flipped');
+  }
+};
+
 function order_name() {
 	animateSort("#deck", "li", "card");
 	document.getElementById("button_name").classList.add('button_active')

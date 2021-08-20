@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div id="header">
-		<h1 id="title">CANADA</h1>
+		<h1 id="title" onclick="flip_all()">CANADA</h1>
 		<div id="controls">
 			<button id="button_date" class="button button_active" onclick="order_date(this)"><span class="button_icon" id="sort_date"></span>Sort by Date</button>
 			<button id="button_name"  class="button button_inactive" onclick="order_name(this)"><span class="button_icon" id="sort_name"></span>Sort by Card</button>
@@ -191,7 +191,17 @@
 			<span class="name">Steph K.</span>
 			<a class="download" href="assets/s_13.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="d_11" data-order="12 ">
+		<li class="card_frame" id="h_10" data-order="12 ">
+			<div class="card">
+				<div class="card_inner is_flipped" onclick="flip(this)">
+					<div class="card_face card_face_front"></div>
+					<div class="card_face card_face_back"></div>
+				</div>
+			</div>
+			<span class="name">Beyond W.</span>
+			<a class="download" href="assets/h_10.png" target="_blank"></a>
+		</li>
+		<li class="card_frame" id="d_11" data-order="13 ">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -201,7 +211,7 @@
 			<span class="name">Paz H.</span>
 			<a class="download" href="assets/d_11.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="s_04" data-order="13 ">
+		<li class="card_frame" id="s_04" data-order="14 ">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -211,15 +221,25 @@
 			<span class="name">Toni T.</span>
 			<a class="download" href="assets/s_04.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="h_10" data-order="14 ">
+		<li class="card_frame" id="c_02" data-order="15 ">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
 					<div class="card_face card_face_back"></div>
 				</div>
 			</div>
-			<span class="name">Beyond W.</span>
-			<a class="download" href="assets/h_10.png" target="_blank"></a>
+			<span class="name">Patrick & Forrest Y.</span>
+			<a class="download" href="assets/c_02.png" target="_blank"></a>
+		</li>
+		<li class="card_frame" id="s_08" data-order="16 ">
+			<div class="card">
+				<div class="card_inner is_flipped" onclick="flip(this)">
+					<div class="card_face card_face_front"></div>
+					<div class="card_face card_face_back"></div>
+				</div>
+			</div>
+			<span class="name">Cat`</span>
+			<a class="download" href="assets/s_08.png" target="_blank"></a>
 		</li>
 	</ul>
 	<div id="footer"></div>
