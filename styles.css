@@ -35,6 +35,15 @@ body {
 	justify-content: center;
 }
 
+#count {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 #counter {
 	margin: 10px -10px 10px -10px;
 	display: flex;
@@ -195,7 +204,7 @@ body {
 	float: left;
 	height: 40px;
 	line-height: 40px;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
 
 }
