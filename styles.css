@@ -6,7 +6,7 @@
 body {
 	margin: auto;
 	min-width: 400px;
-	max-width: 1200px;
+	/*max-width: 1200px;*/
 	padding: 25px;
 	font-family: monospace;
 }
