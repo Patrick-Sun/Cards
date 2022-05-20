@@ -7,6 +7,11 @@ function flip_all() {
   for (var i = 0; i < cards.length; i++) {
      cards.item(i).classList.toggle('is_flipped');
   }
+
+  var icons = document.getElementsByClassName("flip_icon");
+  for (var i = 0; i < icons.length; i++) {
+   icons.item(i).classList.toggle('is_flipped');
+  }
 };
 
 function order_name() {

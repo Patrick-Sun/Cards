@@ -5,7 +5,7 @@
 
 body {
 	margin: auto;
-	min-width: 400px;
+	min-width: 540px;
 	/*max-width: 1200px;*/
 	padding: 25px;
 	font-family: monospace;
@@ -53,7 +53,7 @@ body {
 
 .indicator {
 	background: rgba(0, 0, 0, 0.1);
-	margin: -2px;
+	margin: 0px;
 	list-style-type: none;
  	display: inline-block;
  	height: 16px;
@@ -61,7 +61,7 @@ body {
  	text-align: center;
  	font-size: 13px;
  	font-weight: bold;
- 	border-radius: 7px;
+ 	border-radius: 8px;
  	text-align: center;
 }
 
@@ -75,18 +75,16 @@ body {
 }
 
 .suit {
-	margin: 10px;
+	margin: 12px;
 }
 
 #title {
 	text-align: center;
 	font-size: 50px;
 	letter-spacing: 10px;
-	cursor: pointer;
 }
 
 .button {
-	min-width: 160px;
 	padding: 10px;
 	border-radius: 5px;
 	font-family: monospace;
@@ -104,6 +102,12 @@ body {
 	background-color: black;
 	border: solid 1px black;
 	color: white;
+}
+
+.button_accent {
+	background-color: white;
+	border: solid 1px rgba(193, 39, 45, 0.2);
+	color: #C1272D;
 }
 
 .button_icon {
@@ -133,6 +137,20 @@ body {
 .button_active #sort_name {
  	background-image: url("assets/sort_name_white.svg");
 }
+
+#flip_all {
+ 	background-image: url("assets/flip_all.svg");
+}
+
+.flip_icon {
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+}
+
+.flip_icon.is_flipped {
+	transform: rotate(180deg);
+}
+
 
 .card_frame {
  	list-style-type: none;
