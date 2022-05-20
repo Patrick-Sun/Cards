@@ -85,7 +85,7 @@ body {
 }
 
 .button {
-	width: 160px;
+	width: 170px;
 	padding: 10px;
 	border-radius: 5px;
 	font-family: monospace;
@@ -146,7 +146,7 @@ body {
 .flip_icon {
 	transition: transform 0.5s;
 	transform-style: preserve-3d;
-	margin-right: 15px;
+	margin-right: 10px;
 }
 
 .flip_icon.is_flipped {
