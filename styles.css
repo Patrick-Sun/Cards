@@ -68,6 +68,7 @@ body {
 .indicator.taken {
 	background: black;
 	color: white;
+	cursor: pointer;
 }
 
 .red .indicator.taken {

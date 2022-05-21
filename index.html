@@ -14,76 +14,76 @@
 			<button id="button_name"  class="button button_inactive" onclick="order_name(this)"><span class="button_icon" id="sort_name"></span>Sort by Card</button>
 			<button id="button_flip"  class="button button_accent" onclick="flip_all()"><span class="button_icon flip_icon" id="flip_all"></span>Flip All</button>
 		</div>
-			<h2 id="count">(25/52)</h2>
+			<h2 id="count">(28/52)</h2>
 		<div id="counter">
 			<ul class="suit">
 				<li class="indicator">♣</li>
-				<li class="indicator">A</li>
-				<li class="indicator taken">2</li>
-				<li class="indicator taken">3</li>
-				<li class="indicator taken">4</li>
-				<li class="indicator">5</li>
-				<li class="indicator">6</li>
-				<li class="indicator">7</li>
-				<li class="indicator taken">8</li>
-				<li class="indicator taken">9</li>
-				<li class="indicator">10</li>
-				<li class="indicator taken">J</li>
-				<li class="indicator">Q</li>
-				<li class="indicator">K</li>
+				<li data-ref = "c_01" class="indicator">A</li>
+				<li data-ref = "c_02" class="indicator taken" onclick="scroll_to_card(this)">2</li>
+				<li data-ref = "c_03" class="indicator taken" onclick="scroll_to_card(this)">3</li>
+				<li data-ref = "c_04" class="indicator taken" onclick="scroll_to_card(this)">4</li>
+				<li data-ref = "c_05" class="indicator">5</li>
+				<li data-ref = "c_06" class="indicator">6</li>
+				<li data-ref = "c_07" class="indicator">7</li>
+				<li data-ref = "c_08" class="indicator taken" onclick="scroll_to_card(this)">8</li>
+				<li data-ref = "c_09" class="indicator taken" onclick="scroll_to_card(this)">9</li>
+				<li data-ref = "c_10" class="indicator">10</li>
+				<li data-ref = "c_11" class="indicator taken" onclick="scroll_to_card(this)">J</li>
+				<li data-ref = "c_12" class="indicator">Q</li>
+				<li data-ref = "c_13" class="indicator">K</li>
 			</ul>
 			<ul class="suit red">
 				<li class="indicator" style="color:#C1272D">♦</li>
-				<li class="indicator">A</li>
-				<li class="indicator taken">2</li>
-				<li class="indicator">3</li>
-				<li class="indicator">4</li>
-				<li class="indicator">5</li>
-				<li class="indicator">6</li>
-				<li class="indicator taken">7</li>
-				<li class="indicator">8</li>
-				<li class="indicator">9</li>
-				<li class="indicator">10</li>
-				<li class="indicator taken">J</li>
-				<li class="indicator taken">Q</li>
-				<li class="indicator">K</li>
-			</ul>
-			<ul class="suit red">
-				<li class="indicator" style="color:#C1272D">♥</li>
-				<li class="indicator taken">A</li>
-				<li class="indicator taken">2</li>
-				<li class="indicator">3</li>
-				<li class="indicator taken">4</li>
-				<li class="indicator">5</li>
-				<li class="indicator">6</li>
-				<li class="indicator taken">7</li>
-				<li class="indicator taken">8</li>
-				<li class="indicator">9</li>
-				<li class="indicator taken">10</li>
-				<li class="indicator taken">J</li>
-				<li class="indicator">Q</li>
-				<li class="indicator taken">K</li>
+				<li data-ref = "d_01" class="indicator">A</li>
+				<li data-ref = "d_02" class="indicator taken" onclick="scroll_to_card(this)">2</li>
+				<li data-ref = "d_03" class="indicator">3</li>
+				<li data-ref = "d_04" class="indicator">4</li>
+				<li data-ref = "d_05" class="indicator">5</li>
+				<li data-ref = "d_06" class="indicator">6</li>
+				<li data-ref = "d_07" class="indicator taken" onclick="scroll_to_card(this)">7</li>
+				<li data-ref = "d_08" class="indicator">8</li>
+				<li data-ref = "d_09" class="indicator">9</li>
+				<li data-ref = "d_10" class="indicator">10</li>
+				<li data-ref = "d_11" class="indicator taken" onclick="scroll_to_card(this)">J</li>
+				<li data-ref = "d_12" class="indicator taken" onclick="scroll_to_card(this)">Q</li>
+				<li data-ref = "d_13" class="indicator taken" onclick="scroll_to_card(this)">K</li>
 			</ul>
 			<ul class="suit">
 				<li class="indicator">♠</li>
-				<li class="indicator">A</li>
-				<li class="indicator taken">2</li>
-				<li class="indicator">3</li>
-				<li class="indicator taken">4</li>
-				<li class="indicator">5</li>
-				<li class="indicator">6</li>
-				<li class="indicator taken">7</li>
-				<li class="indicator taken">8</li>
-				<li class="indicator">9</li>
-				<li class="indicator">10</li>
-				<li class="indicator taken">J</li>
-				<li class="indicator taken">Q</li>
-				<li class="indicator taken">K</li>
+				<li data-ref = "s_01" class="indicator taken" onclick="scroll_to_card(this)">A</li>
+				<li data-ref = "s_02" class="indicator taken" onclick="scroll_to_card(this)">2</li>
+				<li data-ref = "s_03" class="indicator">3</li>
+				<li data-ref = "s_04" class="indicator taken" onclick="scroll_to_card(this)">4</li>
+				<li data-ref = "s_05" class="indicator">5</li>
+				<li data-ref = "s_06" class="indicator">6</li>
+				<li data-ref = "s_07" class="indicator taken" onclick="scroll_to_card(this)">7</li>
+				<li data-ref = "s_08" class="indicator taken" onclick="scroll_to_card(this)">8</li>
+				<li data-ref = "s_09" class="indicator">9</li>
+				<li data-ref = "s_10" class="indicator">10</li>
+				<li data-ref = "s_11" class="indicator taken" onclick="scroll_to_card(this)">J</li>
+				<li data-ref = "s_12" class="indicator taken" onclick="scroll_to_card(this)">Q</li>
+				<li data-ref = "s_13" class="indicator taken" onclick="scroll_to_card(this)">K</li>
+			</ul>
+			<ul class="suit red">
+				<li class="indicator" style="color:#C1272D">♥</li>
+				<li data-ref = "h_01" class="indicator taken" onclick="scroll_to_card(this)">A</li>
+				<li data-ref = "h_02" class="indicator taken" onclick="scroll_to_card(this)">2</li>
+				<li data-ref = "h_03" class="indicator">3</li>
+				<li data-ref = "h_04" class="indicator taken" onclick="scroll_to_card(this)">4</li>
+				<li data-ref = "h_05" class="indicator">5</li>
+				<li data-ref = "h_06" class="indicator">6</li>
+				<li data-ref = "h_07" class="indicator taken" onclick="scroll_to_card(this)">7</li>
+				<li data-ref = "h_08" class="indicator taken" onclick="scroll_to_card(this)">8</li>
+				<li data-ref = "h_09" class="indicator">9</li>
+				<li data-ref = "h_10" class="indicator taken" onclick="scroll_to_card(this)">10</li>
+				<li data-ref = "h_11" class="indicator taken" onclick="scroll_to_card(this)">J</li>
+				<li data-ref = "h_12" class="indicator taken" onclick="scroll_to_card(this)">Q</li>
+				<li data-ref = "h_13" class="indicator taken" onclick="scroll_to_card(this)">K</li>
 			</ul>
 		</div>
 	</div>
 	<ul id="deck">
-		<li class="card_frame" id="c_03" data-order="01">
+		<li class="card_frame" id="c_03" data-orderdate="01" data-ordercard="03">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -93,7 +93,7 @@
 			<span class="name">Patrick</span>
 			<a class="download" href="assets/c_03.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="s_12" data-order="02">
+		<li class="card_frame" id="s_12" data-orderdate="02" data-ordercard="38">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -103,7 +103,7 @@
 			<span class="name">Rachel</span>
 			<a class="download" href="assets/s_12.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="s_11" data-order="03">
+		<li class="card_frame" id="s_11" data-orderdate="03" data-ordercard="37">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -113,7 +113,7 @@
 			<span class="name">Tony</span>
 			<a class="download" href="assets/s_11.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="d_07" data-order="04">
+		<li class="card_frame" id="d_07" data-orderdate="04" data-ordercard="20">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -123,7 +123,7 @@
 			<span class="name">Mochi</span>
 			<a class="download" href="assets/d_07.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="h_11" data-order="05">
+		<li class="card_frame" id="h_11" data-orderdate="05" data-ordercard="50">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -133,7 +133,7 @@
 			<span class="name">Jalal</span>
 			<a class="download" href="assets/h_11.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="c_04" data-order="06">
+		<li class="card_frame" id="c_04" data-orderdate="06" data-ordercard="04">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -143,7 +143,7 @@
 			<span class="name">Mako</span>
 			<a class="download" href="assets/c_04.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="c_08" data-order="07">
+		<li class="card_frame" id="c_08" data-orderdate="07" data-ordercard="08">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -153,7 +153,7 @@
 			<span class="name">Mikayla</span>
 			<a class="download" href="assets/c_08.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="h_01" data-order="08">
+		<li class="card_frame" id="h_01" data-orderdate="08" data-ordercard="40">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -163,7 +163,7 @@
 			<span class="name">Rose</span>
 			<a class="download" href="assets/h_01.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="s_02" data-order="09">
+		<li class="card_frame" id="s_02" data-orderdate="09" data-ordercard="28">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -173,7 +173,7 @@
 			<span class="name">Johnny</span>
 			<a class="download" href="assets/s_02.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="h_13" data-order="10">
+		<li class="card_frame" id="h_13" data-orderdate="10" data-ordercard="52">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -183,7 +183,7 @@
 			<span class="name">Rachel</span>
 			<a class="download" href="assets/h_13.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="s_13" data-order="11">
+		<li class="card_frame" id="s_13" data-orderdate="11" data-ordercard="39">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -193,7 +193,7 @@
 			<span class="name">Steph</span>
 			<a class="download" href="assets/s_13.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="h_10" data-order="12">
+		<li class="card_frame" id="h_10" data-orderdate="12" data-ordercard="49">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -203,7 +203,7 @@
 			<span class="name">Beyond</span>
 			<a class="download" href="assets/h_10.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="d_11" data-order="13">
+		<li class="card_frame" id="d_11" data-orderdate="13" data-ordercard="24">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -213,7 +213,7 @@
 			<span class="name">Paz</span>
 			<a class="download" href="assets/d_11.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="s_04" data-order="14">
+		<li class="card_frame" id="s_04" data-orderdate="14" data-ordercard="30">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -223,7 +223,7 @@
 			<span class="name">Toni</span>
 			<a class="download" href="assets/s_04.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="c_02" data-order="15">
+		<li class="card_frame" id="c_02" data-orderdate="15" data-ordercard="02">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -233,7 +233,7 @@
 			<span class="name">Patrick, Forest, Chini</span>
 			<a class="download" href="assets/c_02.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="s_08" data-order="16">
+		<li class="card_frame" id="s_08" data-orderdate="16" data-ordercard="34">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -243,7 +243,7 @@
 			<span class="name">Cat</span>
 			<a class="download" href="assets/s_08.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="h_07" data-order="17 ">
+		<li class="card_frame" id="h_07" data-orderdate="17" data-ordercard="46">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -253,7 +253,7 @@
 			<span class="name">Paul</span>
 			<a class="download" href="assets/h_07.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="c_11" data-order="18">
+		<li class="card_frame" id="c_11" data-orderdate="18" data-ordercard="11">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -263,7 +263,7 @@
 			<span class="name">Chris</span>
 			<a class="download" href="assets/c_11.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="h_08" data-order="19">
+		<li class="card_frame" id="h_08" data-orderdate="19" data-ordercard="47">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -273,7 +273,7 @@
 			<span class="name">Dave</span>
 			<a class="download" href="assets/h_08.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="d_12" data-order="20">
+		<li class="card_frame" id="d_12" data-orderdate="20" data-ordercard="25">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -283,7 +283,7 @@
 			<span class="name">Nathan</span>
 			<a class="download" href="assets/d_12.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="h_02" data-order="20">
+		<li class="card_frame" id="h_02" data-orderdate="20" data-ordercard="41">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -293,7 +293,7 @@
 			<span class="name">Brittany</span>
 			<a class="download" href="assets/h_02.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="d_02" data-order="20">
+		<li class="card_frame" id="d_02" data-orderdate="20" data-ordercard="15">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -303,7 +303,7 @@
 			<span class="name">Shelby</span>
 			<a class="download" href="assets/d_02.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="c_09" data-order="20">
+		<li class="card_frame" id="c_09" data-orderdate="20" data-ordercard="09">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -313,7 +313,7 @@
 			<span class="name">Kim, Sunny, Lilly</span>
 			<a class="download" href="assets/c_09.png" target="_blank"></a>
 		</li>
-		<li class="card_frame" id="s_07" data-order="22">
+		<li class="card_frame" id="s_07" data-orderdate="22" data-ordercard="33">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -323,7 +323,7 @@
 			<span class="name">Derek</span>
 			<a class="download" href="assets/s_07.png" target="_blank"></a>
 		</li>
-				<li class="card_frame" id="h_04" data-order="24">
+		<li class="card_frame" id="h_04" data-orderdate="24" data-ordercard="43">
 			<div class="card">
 				<div class="card_inner is_flipped" onclick="flip(this)">
 					<div class="card_face card_face_front"></div>
@@ -332,6 +332,36 @@
 			</div>
 			<span class="name">Lindsay</span>
 			<a class="download" href="assets/h_04.png" target="_blank"></a>
+		</li>
+		<li class="card_frame" id="s_01" data-orderdate="27" data-ordercard="27">
+			<div class="card">
+				<div class="card_inner is_flipped" onclick="flip(this)">
+					<div class="card_face card_face_front"></div>
+					<div class="card_face card_face_back"></div>
+				</div>
+			</div>
+			<span class="name">Ahmed</span>
+			<a class="download" href="assets/s_01.png" target="_blank"></a>
+		</li>
+		<li class="card_frame" id="h_12" data-orderdate="28" data-ordercard="51">
+			<div class="card">
+				<div class="card_inner is_flipped" onclick="flip(this)">
+					<div class="card_face card_face_front"></div>
+					<div class="card_face card_face_back"></div>
+				</div>
+			</div>
+			<span class="name">Katrina</span>
+			<a class="download" href="assets/h_12.png" target="_blank"></a>
+		</li>
+		<li class="card_frame" id="d_13" data-orderdate="29" data-ordercard="26">
+			<div class="card">
+				<div class="card_inner is_flipped" onclick="flip(this)">
+					<div class="card_face card_face_front"></div>
+					<div class="card_face card_face_back"></div>
+				</div>
+			</div>
+			<span class="name">Michelle</span>
+			<a class="download" href="assets/d_13.png" target="_blank"></a>
 		</li>
 	</ul>
 	<div id="footer"></div>

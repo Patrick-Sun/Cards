@@ -34,11 +34,11 @@ function animateSort(parent, child, sortAttribute) {
 
   	if (sortAttribute=="date") {
 	  var sorted = originals.toArray().sort(function(a, b) {
-	    return a.dataset.order.localeCompare(b.dataset.order);
+	    return a.dataset.orderdate.localeCompare(b.dataset.orderdate);
 	  });
 	} else if (sortAttribute=="card") {
 		var sorted = originals.toArray().sort(function(a, b) {
-			return a.id.localeCompare(b.id);
+      return a.dataset.ordercard.localeCompare(b.dataset.ordercard);
 	  	});
 	}
 
@@ -65,5 +65,14 @@ function animateSort(parent, child, sortAttribute) {
     originals.each(function(index) {
       $(this).replaceWith(sorted[index]);
     });
+  });
+}
+
+function scroll_to_card(ele) {
+
+  const y = document.getElementById(ele.dataset.ref).getBoundingClientRect().top + window.scrollY - 20;
+  window.scroll({
+    top: y,
+    behavior: 'smooth'
   });
 }
