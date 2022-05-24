@@ -14,7 +14,7 @@
 			<button id="button_name"  class="button button_inactive" onclick="order_name(this)"><span class="button_icon" id="sort_name"></span>Sort by Card</button>
 			<button id="button_flip"  class="button button_accent" onclick="flip_all()"><span class="button_icon flip_icon" id="flip_all"></span>Flip All</button>
 		</div>
-			<h2 id="count">(28/52)</h2>
+			<h2 id="count">(30/52)</h2>
 		<div id="counter">
 			<ul class="suit">
 				<li class="indicator">♣</li>
@@ -58,7 +58,7 @@
 				<li data-ref = "s_06" class="indicator">6</li>
 				<li data-ref = "s_07" class="indicator taken" onclick="scroll_to_card(this)">7</li>
 				<li data-ref = "s_08" class="indicator taken" onclick="scroll_to_card(this)">8</li>
-				<li data-ref = "s_09" class="indicator">9</li>
+				<li data-ref = "s_09" class="indicator taken" onclick="scroll_to_card(this)">9</li>
 				<li data-ref = "s_10" class="indicator taken" onclick="scroll_to_card(this)">10</li>
 				<li data-ref = "s_11" class="indicator taken" onclick="scroll_to_card(this)">J</li>
 				<li data-ref = "s_12" class="indicator taken" onclick="scroll_to_card(this)">Q</li>
@@ -332,6 +332,16 @@
 			</div>
 			<span class="name">Derek</span>
 			<a class="download" href="assets/s_07.png" target="_blank"></a>
+		</li>
+		<li class="card_frame" id="s_09" data-orderdate="23" data-ordercard="35">
+			<div class="card">
+				<div class="card_inner is_flipped" onclick="flip(this)">
+					<div class="card_face card_face_front"></div>
+					<div class="card_face card_face_back"></div>
+				</div>
+			</div>
+			<span class="name">Sam</span>
+			<a class="download" href="assets/s_09.png" target="_blank"></a>
 		</li>
 		<li class="card_frame" id="h_04" data-orderdate="24" data-ordercard="43">
 			<div class="card">
