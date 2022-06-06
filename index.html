@@ -14,7 +14,7 @@
 			<button id="button_name"  class="button button_inactive" onclick="order_name(this)"><span class="button_icon" id="sort_name"></span>Sort by Card</button>
 			<button id="button_flip"  class="button button_accent" onclick="flip_all()"><span class="button_icon flip_icon" id="flip_all"></span>Flip All</button>
 		</div>
-			<h2 id="count">(30/52)</h2>
+			<h2 id="count">(32/52)</h2>
 		<div id="counter">
 			<ul class="suit">
 				<li class="indicator">♣</li>
@@ -70,8 +70,8 @@
 				<li data-ref = "h_02" class="indicator taken" onclick="scroll_to_card(this)">2</li>
 				<li data-ref = "h_03" class="indicator">3</li>
 				<li data-ref = "h_04" class="indicator taken" onclick="scroll_to_card(this)">4</li>
-				<li data-ref = "h_05" class="indicator">5</li>
-				<li data-ref = "h_06" class="indicator">6</li>
+				<li data-ref = "h_05" class="indicator taken" onclick="scroll_to_card(this)">5</li>
+				<li data-ref = "h_06" class="indicator taken" onclick="scroll_to_card(this)">6</li>
 				<li data-ref = "h_07" class="indicator taken" onclick="scroll_to_card(this)">7</li>
 				<li data-ref = "h_08" class="indicator taken" onclick="scroll_to_card(this)">8</li>
 				<li data-ref = "h_09" class="indicator">9</li>
@@ -382,6 +382,26 @@
 			</div>
 			<span class="name">Michelle</span>
 			<a class="download" href="assets/d_13.png" target="_blank"></a>
+		</li>
+		<li class="card_frame" id="h_05" data-orderdate="30" data-ordercard="44">
+			<div class="card">
+				<div class="card_inner is_flipped" onclick="flip(this)">
+					<div class="card_face card_face_front"></div>
+					<div class="card_face card_face_back"></div>
+				</div>
+			</div>
+			<span class="name">Jimmy</span>
+			<a class="download" href="assets/h_05.png" target="_blank"></a>
+		</li>
+		<li class="card_frame" id="h_06" data-orderdate="31" data-ordercard="45">
+			<div class="card">
+				<div class="card_inner is_flipped" onclick="flip(this)">
+					<div class="card_face card_face_front"></div>
+					<div class="card_face card_face_back"></div>
+				</div>
+			</div>
+			<span class="name">Sydney</span>
+			<a class="download" href="assets/h_06.png" target="_blank"></a>
 		</li>
 	</ul>
 	<div id="footer"></div>
