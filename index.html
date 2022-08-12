@@ -14,7 +14,7 @@
 			<button id="button_name"  class="button button_inactive" onclick="order_name(this)"><span class="button_icon" id="sort_name"></span>Sort by Card</button>
 			<button id="button_flip"  class="button button_accent" onclick="flip_all()"><span class="button_icon flip_icon" id="flip_all"></span>Flip All</button>
 		</div>
-			<h2 id="count">(34/52)</h2>
+			<h2 id="count">(35/52)</h2>
 		<div id="counter">
 			<ul class="suit">
 				<li class="indicator">♣</li>
@@ -36,7 +36,7 @@
 				<li class="indicator" style="color:#C1272D">♦</li>
 				<li data-ref = "d_01" class="indicator taken" onclick="scroll_to_card(this)">A</li>
 				<li data-ref = "d_02" class="indicator taken" onclick="scroll_to_card(this)">2</li>
-				<li data-ref = "d_03" class="indicator">3</li>
+				<li data-ref = "d_03" class="indicator taken" onclick="scroll_to_card(this)">3</li>
 				<li data-ref = "d_04" class="indicator">4</li>
 				<li data-ref = "d_05" class="indicator taken" onclick="scroll_to_card(this)">5</li>
 				<li data-ref = "d_06" class="indicator">6</li>
@@ -422,6 +422,16 @@
 			</div>
 			<span class="name">Laura</span>
 			<a class="download" href="assets/d_05.png" target="_blank"></a>
+		</li>
+		<li class="card_frame" id="d_03" data-orderdate="35" data-ordercard="16">
+			<div class="card">
+				<div class="card_inner is_flipped" onclick="flip(this)">
+					<div class="card_face card_face_front"></div>
+					<div class="card_face card_face_back"></div>
+				</div>
+			</div>
+			<span class="name">Jennifer</span>
+			<a class="download" href="assets/d_03.png" target="_blank"></a>
 		</li>
 	</ul>
 	<div id="footer"></div>
